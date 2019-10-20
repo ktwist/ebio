@@ -16,7 +16,7 @@ const BioEntries = ({history}) => {
     const [name, setName] = useState('');
     const [date, setDate] = useState(moment().format('YYYY-MM-DD'));
     const [list, setList] = useState([]);
-    const uniqueId = () => `id-${Math.random().toString(36).su0bstr(2, 16)}`;
+    const uniqueId = () => `id-${Math.random().toString(36).substr(2, 16)}`;
 
     useEffect(() => {
         const cookie = cookies.get('list');
