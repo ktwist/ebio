@@ -11,7 +11,9 @@ const Input = ({type, label, value, handleInputChange, minLength, placeholder, r
             {label && <label>{label}</label>}
             <input 
                 type={type}
-                className="border border-gray-500 px-2 h-6"
+                className="bg-gray-200 w-full appearance-none border-2 border-gray-200 rounded text-xs 
+                            py-2 px-4 text-gray-700 leading-tight focus:outline-none 
+                            focus:bg-white focus:border-grey-800"
                 onChange={handleChange}
                 value={value}
                 required={required}
